@@ -15,8 +15,8 @@ main {
 }
 
 .card {
-  min-width: 450px;
-  height: 700px;
+  width: 450px;
+  height: 680px;
   border-radius: 30px;
   background-color: #ffffff;
   position: relative;
@@ -74,7 +74,7 @@ main {
 
 .job-title {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 hr {
@@ -123,4 +123,11 @@ a {
 i {
   margin-right: 1px;
   font-size: 25px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 80%;
+    height: 730px;
+  }
 }

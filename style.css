@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 20px 0;
+  background-color: rgb(128, 128, 128, 0.4);
+}
+
+.card {
+  min-width: 450px;
+  height: 700px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 10;
+}
+
+.card::after {
+  content: "";
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -2;
+  background: rgb(235, 156, 111);
+  background: linear-gradient(
+    180deg,
+    rgba(235, 156, 111, 1) 0%,
+    rgba(145, 89, 55, 1) 83%
+  );
+  border-radius: 30px;
+}
+
+.position {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  padding: 0 30px;
+}
+
+.image-bg {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  border: 4px solid #ffffff;
+  margin-bottom: 10px;
+}
+
+.image-bg img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.fullname {
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+hr {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: 4px;
+  border: none;
+  margin: 10px 0 15px;
+  background-color: #b4734d;
+}
+
+.short-bio {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+a {
+  /* text-decoration: underline; */
+  text-underline-offset: 3px;
+  color: #835338;
+}
+
+.location {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.email-address {
+  margin-bottom: 5px;
+}
+
+#current-time {
+  font-size: 30px;
+}
+
+.socials {
+  margin-bottom: 5px;
+}
+
+.socials a i {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+i {
+  margin-right: 1px;
+  font-size: 25px;
+}
